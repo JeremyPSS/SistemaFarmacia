@@ -1,0 +1,10 @@
+C:\DocumentosAngel\Proyecto\SistemaFarmacia\SistemaFarmacia\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\DocumentosAngel\Proyecto\SistemaFarmacia\SistemaFarmacia\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\DocumentosAngel\Proyecto\SistemaFarmacia\SistemaFarmacia\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\DocumentosAngel\Proyecto\SistemaFarmacia\SistemaFarmacia\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\DocumentosAngel\Proyecto\SistemaFarmacia\SistemaFarmacia\CapaEntidades\obj\Debug\CapaEntidades.pdb
+C:\Project-Farmacia-PA\SistemaFarmacia\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Project-Farmacia-PA\SistemaFarmacia\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Project-Farmacia-PA\SistemaFarmacia\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Project-Farmacia-PA\SistemaFarmacia\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Project-Farmacia-PA\SistemaFarmacia\CapaEntidades\obj\Debug\CapaEntidades.pdb
