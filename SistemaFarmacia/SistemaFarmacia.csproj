@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64CE9A98-B3A9-4EE5-B7B5-25ED47F37DE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemaFarmacia</RootNamespace>
+    <AssemblyName>SistemaFarmacia</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inventario\frmAdminFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmAdminFactura.Designer.cs">
+      <DependentUpon>frmAdminFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmListaMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmListaMedicamento.Designer.cs">
+      <DependentUpon>frmListaMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmAdminClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmAdminClientes.Designer.cs">
+      <DependentUpon>frmAdminClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmAdminPromociones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmAdminPromociones.Designer.cs">
+      <DependentUpon>frmAdminPromociones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmAdminMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmAdminMedicamentos.Designer.cs">
+      <DependentUpon>frmAdminMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmAdminUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmAdminUsuarios.Designer.cs">
+      <DependentUpon>frmAdminUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmEditCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmEditCliente.Designer.cs">
+      <DependentUpon>frmEditCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmFacturacion.Designer.cs">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmInicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmInicioSesion.Designer.cs">
+      <DependentUpon>frmInicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmNotificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmNotificaciones.Designer.cs">
+      <DependentUpon>frmNotificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validaciones.cs" />
+    <EmbeddedResource Include="Inventario\frmAdminFactura.resx">
+      <DependentUpon>frmAdminFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmListaMedicamento.resx">
+      <DependentUpon>frmListaMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmAdminClientes.resx">
+      <DependentUpon>frmAdminClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmAdminPromociones.resx">
+      <DependentUpon>frmAdminPromociones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmAdminMedicamentos.resx">
+      <DependentUpon>frmAdminMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmAdminUsuarios.resx">
+      <DependentUpon>frmAdminUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmEditCliente.resx">
+      <DependentUpon>frmEditCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmFacturacion.resx">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmInicioSesion.resx">
+      <DependentUpon>frmInicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmNotificaciones.resx">
+      <DependentUpon>frmNotificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{58ffe140-7074-49ab-8466-06bc91af3719}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.csproj">
+      <Project>{ff459caa-346d-423b-977b-af18048b6dbd}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
