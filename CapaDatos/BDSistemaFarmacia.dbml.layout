@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.25" name="BDSistemaFarmacia">
+  <DataContextMoniker Name="/BDSistemaFarmaciaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2200e0bd-20e3-42e7-ba77-9aaded170475" absoluteBounds="4, 2.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/BDSistemaFarmaciaDataContext/Administrador" />
+      <nestedChildShapes>
+        <elementListCompartment Id="043d8214-c8c6-4918-ae85-31be57cc8338" absoluteBounds="4.015, 3.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="51b5478f-6623-4f08-b4b7-d3a43c88e50b" absoluteBounds="7, 3.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/BDSistemaFarmaciaDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c1ef8c1-d9f7-45c2-9485-0ff0a18c5069" absoluteBounds="7.015, 3.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="964d273e-7c20-4036-a7fd-98b613d14f33" absoluteBounds="1.125, 2.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BDSistemaFarmaciaDataContext/Factura" />
+      <nestedChildShapes>
+        <elementListCompartment Id="662215d2-bca7-4159-9a53-409767fa258f" absoluteBounds="1.1400000000000001, 3.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8 : 3.5); (8 : 2.625); (3.5 : 2.625); (3.5 : 3.66429768880208); (3.125 : 3.66429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BDSistemaFarmaciaDataContext/Cliente/Cliente_Factura" />
+      <nodes>
+        <classShapeMoniker Id="51b5478f-6623-4f08-b4b7-d3a43c88e50b" />
+        <classShapeMoniker Id="964d273e-7c20-4036-a7fd-98b613d14f33" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0cffffa1-a868-4de2-a39a-5a877a863e3d" absoluteBounds="1.5, 5.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BDSistemaFarmaciaDataContext/Factura_Detalle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6439ea99-17d6-4055-8982-266ebd60c67d" absoluteBounds="1.5149999999999997, 5.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.3125 : 4.45359537760417); (2.3125 : 5.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BDSistemaFarmaciaDataContext/Factura/Factura_Factura_Detalle" />
+      <nodes>
+        <classShapeMoniker Id="964d273e-7c20-4036-a7fd-98b613d14f33" />
+        <classShapeMoniker Id="0cffffa1-a868-4de2-a39a-5a877a863e3d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="862cbf65-a028-457f-b079-50eb9aafd8a5" absoluteBounds="4.75, 6.125, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/BDSistemaFarmaciaDataContext/Medicamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6a77098-d1db-48e3-aa83-3d15972ae097" absoluteBounds="4.765, 6.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.75 : 6.60179768880208); (3.5 : 6.60179768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BDSistemaFarmaciaDataContext/Medicamento/Medicamento_Factura_Detalle" />
+      <nodes>
+        <classShapeMoniker Id="862cbf65-a028-457f-b079-50eb9aafd8a5" />
+        <classShapeMoniker Id="0cffffa1-a868-4de2-a39a-5a877a863e3d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c094f59d-c727-47c3-ae9d-eb4c3b42bde1" absoluteBounds="7.625, 6.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BDSistemaFarmaciaDataContext/Promociones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f6f101d-528d-418a-8bb5-a46d80af17c5" absoluteBounds="7.64, 6.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.625 : 6.94314697265625); (6.75 : 6.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BDSistemaFarmaciaDataContext/Promociones/Promociones_Medicamento" />
+      <nodes>
+        <classShapeMoniker Id="c094f59d-c727-47c3-ae9d-eb4c3b42bde1" />
+        <classShapeMoniker Id="862cbf65-a028-457f-b079-50eb9aafd8a5" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
